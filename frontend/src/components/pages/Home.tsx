@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { ChessBoardImg } from "../../assets";
+import Button from "../shared/Button";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -23,12 +24,7 @@ const Home = () => {
               </p>
             </div>
             <div className="mt-8 flex justify-center">
-              <button
-                onClick={() => navigate("/game")}
-                className="px-8 py-6 text-2xl bg-[#80b64b] hover:bg-[#9fcf6e] text-white rounded font-bold"
-              >
-                Play Now
-              </button>
+              <Button onClick={() => navigate("/game")}>Play Online</Button>
             </div>
           </div>
         </div>
