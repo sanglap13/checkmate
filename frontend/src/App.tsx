@@ -1,8 +1,15 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 const App = () => {
   return (
-    <div>
-      <button>Join Room</button>
-    </div>
+    <>
+      <BrowserRouter basename="/app">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/game" element={<Game />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 };
 
